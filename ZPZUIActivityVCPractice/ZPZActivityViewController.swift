@@ -31,11 +31,12 @@ class ZPZActivityViewController: UIViewController {
             }
         }
         
-        let image1 = UIImage.init(named: "2.png")
+        let image1 = UIImage.init(named: "2.jpg")
         let image2 = UIImage.init(named: "1.jpeg")
         let image3 = UIImage.init(contentsOfFile: path)
-        let image4 = UIImage.init(contentsOfFile: Bundle.main.path(forResource: "3", ofType: "jpg", inDirectory: nil) ?? "")
-        let items = [image1!, image2!, image3!, image4!]
+        let image4 = UIImage.init(contentsOfFile: Bundle.main.path(forResource: "19791218", ofType: "png", inDirectory: nil) ?? "")
+//        let items:[Any] = ["My GitHub", URL(string: "https://github.com/zhoupengzu")!]
+        let items:[Any] = [image1!, image2!, image3!, image4!]
         let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
         activityVC.completionWithItemsHandler = {
             (activityType, status, item, error) -> Void in
